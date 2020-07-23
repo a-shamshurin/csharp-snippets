@@ -21,6 +21,8 @@ Here you can find the most common snippets for your code like Debug.WriteLine("H
 # How to contribute
 
 It is enough to use a text editor to write code snippets.
+
+**[Understanding the GitHub flow:](https://guides.github.com/introduction/flow/)**
 1. Create an issue to describe changes you want to contribute.
 2. All task-related questions should be discussed in the GitHub issue.
 3. Fork the repository and make a branch related to the created issue.
