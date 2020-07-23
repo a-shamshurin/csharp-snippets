@@ -12,11 +12,11 @@
 5. Select it and click Finish, then OK.
 
 **[Insert a code snippet](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet)**
-1. You can write in Visual Studio a snippet shortcut like ```cw`` and then press double TAB using the keyboard.
-2. Also, you can use another way. With a code file open in the editor, choose Snippets > Insert Snippet from the right-click menu, then My Code Snippets. Then, select a snippet and double-click it.
+* You can write in Visual Studio editor a snippet shortcut like ```cw``` and then press double TAB using the keyboard.
+* Also, you can use another way. With a code file open in the editor, choose Snippets > Insert Snippet from the right-click menu, then My Code Snippets. Then, select a snippet and double-click it.
 
 # Use cases
-Here you can find the most common snippets for your code like Debug.WriteLine("Hi") or the dispose pattern
+Here you can find the most common snippets for your code like Debug.WriteLine("Hi friend") or the dispose pattern
 
 # How to contribute
 
