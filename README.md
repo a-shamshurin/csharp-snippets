@@ -15,6 +15,9 @@
 1. You can write in Visual Studio a snippet shortcut like ```cw`` and then press double TAB using the keyboard.
 2. Also, you can use another way. With a code file open in the editor, choose Snippets > Insert Snippet from the right-click menu, then My Code Snippets. Then, select a snippet and double-click it.
 
+# Use cases
+Here you can find the most common snippets for your code like Debug.WriteLine("Hi") or the dispose pattern
+
 # How to contribute
 
 It is enough to use a text editor to write code snippets.
