@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ADO ExecuteReader</Title>
+			<Shortcut>ador</Shortcut>
+			<Description>Code snippet for execute a sql query</Description>
+			<Author>Alex Shamshurin</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+      <Declarations>
+      </Declarations>
+			<Code Language="csharp">
+		<![CDATA[        
+        public class SqlObject
+        {
+            public string Id { get; set; }
+        }
+
+        public const string SqlSelectCustomers = @"
+SELECT 
+    * 
+FROM 
+    TableName c WITH(NOLOCK)";
+
+        private static IEnumerable<SqlObject> GetSqlObjects(string SqlConnectionString)
+        {
+            List<SqlObject> objs = new List<SqlObject>();
+            using var con = new SqlConnection(SqlConnectionString);
+            var sqlCommand = new SqlCommand(SqlSelectCustomers);
+            con.Open();
+            using var sqlrdr = sqlCommand.ExecuteReader();
+            while (sqlrdr.Read())
+            {
+                var obj = new SqlObject();
+                obj.Id = (string)sqlrdr["Id"];
+                objs.Add(obj);
+            }
+
+            return objs;
+        }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
