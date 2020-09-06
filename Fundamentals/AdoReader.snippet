@@ -31,7 +31,7 @@ FROM
         {
             List<SqlObject> objs = new List<SqlObject>();
             using var con = new SqlConnection(SqlConnectionString);
-            var sqlCommand = new SqlCommand(SqlSelectCustomers);
+            var sqlCommand = new SqlCommand(SqlSelectCustomers, con);
             con.Open();
             using var sqlrdr = sqlCommand.ExecuteReader();
             while (sqlrdr.Read())
