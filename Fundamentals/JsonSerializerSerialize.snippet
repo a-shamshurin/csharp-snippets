@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>JsonSerializer.Serialize</Title>
+			<Shortcut>JsonS</Shortcut>
+			<Description>Serializes some object</Description>
+			<Author>Alex Shamshurin</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>Json</ID>
+					<Function>SimpleTypeName(global::System.Text.Json)</Function>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+		<![CDATA[$Json$.JsonSerializer.Serialize($end$);
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
